@@ -123,4 +123,64 @@
     @apply bg-background text-foreground;
   }
 }
+@layer components {
+  .post-content {
+    @apply text-lg leading-relaxed;
+  }
 
+  .post-content h1 {
+    @apply text-3xl font-bold tracking-tight mt-8 mb-4;
+  }
+
+  .post-content h2 {
+    @apply text-2xl font-bold tracking-tight mt-8 mb-4 border-b-3 border-foreground pb-2;
+  }
+
+  .post-content h3 {
+    @apply text-xl font-bold tracking-tight mt-6 mb-3;
+  }
+
+  .post-content p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  .post-content a {
+    @apply text-primary font-semibold no-underline;
+  }
+
+  .post-content a:hover {
+    @apply underline;
+  }
+
+  .post-content strong {
+    @apply font-bold;
+  }
+
+  .post-content code {
+    @apply bg-muted px-1.5 py-0.5 text-sm font-mono;
+  }
+
+  .post-content pre {
+    @apply bg-foreground text-primary-foreground border-3 border-foreground p-4 overflow-x-auto my-4;
+  }
+
+  .post-content pre code {
+    @apply bg-transparent p-0 text-inherit;
+  }
+
+  .post-content ul {
+    @apply my-4 list-disc pl-6;
+  }
+
+  .post-content ol {
+    @apply my-4 list-decimal pl-6;
+  }
+
+  .post-content li {
+    @apply mb-2;
+  }
+
+  .post-content blockquote {
+    @apply border-l-4 border-primary pl-4 italic bg-muted py-2 my-4;
+  }
+}
