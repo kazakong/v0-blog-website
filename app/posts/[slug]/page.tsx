@@ -1,10 +1,8 @@
-import { notFound } from 'next/navigation'
-import type { Metadata } from 'next'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
-import { BlogPost } from '@/components/blog-post'
-import { RelatedPosts } from '@/components/related-posts'
-import { getPostData, getAllPostSlugs, getRelatedPosts } from '@/lib/posts'
+import { Header } from "../../../components/header"
+import { Footer } from "../../../components/footer"
+import { BlogPost } from "../../../components/blog-post"
+import { RelatedPosts } from "../../../components/related-posts"
+import { getPostData, getAllPostSlugs, getRelatedPosts } from "../../../lib/posts"
 
 interface PostPageProps {
   params: Promise<{

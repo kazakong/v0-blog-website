@@ -1,7 +1,7 @@
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
-import { BlogList } from '@/components/blog-list'
-import { getSortedPostsData } from '@/lib/posts'
+import { Header } from "../components/header"
+import { Footer } from "../components/footer"
+import { BlogList } from "../components/blog-list"
+import { getSortedPostsData } from "../lib/posts"
 
 export default function Home() {
   const posts = getSortedPostsData()
